@@ -27,9 +27,23 @@
 }
 
 .tw-followCard-avatar-button {
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    border: 1px solid #000;
+}
+.tw-followCard-avatar-button.is-following {
+    border: 1px solid red;
+}
+
+.tw-followCard-avatar-button:hover {
+    background-color: #09f;
+    transition: .3s ease background-color;
+}
+
+.tw-followCard-avatar-button.is-following:hover {
+    background-color: red;
 }
